@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/MehdiBouchachi/Rate-Movie/static/css/main.ec7ff60a.css",
-    "main.js": "/MehdiBouchachi/Rate-Movie/static/js/main.ecd14e96.js",
-    "index.html": "/MehdiBouchachi/Rate-Movie/index.html",
-    "main.ec7ff60a.css.map": "/MehdiBouchachi/Rate-Movie/static/css/main.ec7ff60a.css.map",
-    "main.ecd14e96.js.map": "/MehdiBouchachi/Rate-Movie/static/js/main.ecd14e96.js.map"
+    "main.css": "/static/css/main.ec7ff60a.css",
+    "main.js": "/static/js/main.b6d7ae16.js",
+    "index.html": "/index.html",
+    "main.ec7ff60a.css.map": "/static/css/main.ec7ff60a.css.map",
+    "main.b6d7ae16.js.map": "/static/js/main.b6d7ae16.js.map"
   },
   "entrypoints": [
     "static/css/main.ec7ff60a.css",
-    "static/js/main.ecd14e96.js"
+    "static/js/main.b6d7ae16.js"
   ]
 }
