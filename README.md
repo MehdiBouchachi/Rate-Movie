@@ -44,5 +44,5 @@
 npm install
 npm start
 ```
-## 📁 Suggested Project Structure
+
 
