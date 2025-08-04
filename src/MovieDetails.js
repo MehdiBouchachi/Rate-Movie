@@ -55,7 +55,7 @@ export function MovieDetails({
           setLoading(true);
           setError("");
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`,
+            `https://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`,
             { signal: controller.signal }
           );
           if (!res.ok) throw new Error("Somthing went wrong!");
