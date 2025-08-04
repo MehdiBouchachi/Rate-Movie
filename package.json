@@ -1,5 +1,5 @@
 {
-  "homepage":"https://MehdiBouchachi.github.io/Movies",
+  "homepage": "https://github.com/MehdiBouchachi/Rate-Movie",
   "name": "usepopcorn",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "perdeploy": "npm run build",
-    "deploy" : "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -37,5 +37,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }

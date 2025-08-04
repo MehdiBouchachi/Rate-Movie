@@ -4,10 +4,9 @@ export function useMovie(query) {
   const [movies, setMovies] = useState([]);
   const [isloading, setLoading] = useState(false);
   const [error, setError] = useState("");
-
   useEffect(
     function () {
-       // callBack?.();
+      // callBack?.();
       const controller = new AbortController();
       async function fetchMovies() {
         try {
@@ -15,7 +14,7 @@ export function useMovie(query) {
           setError("");
           const res = await fetch(
             `http://www.omdbapi.com/?apikey=${KEY}&s=${query}`,
-           { signal: controller.signal }
+            { signal: controller.signal }
           );
 
           if (!res.ok) throw new Error("Somthing went wrong!");
@@ -25,7 +24,7 @@ export function useMovie(query) {
           setMovies(data.Search);
         } catch (err) {
           if (err.name !== "AbortError") {
-                setError(err.message);
+            setError(err.message);
           }
         } finally {
           setLoading(false);
