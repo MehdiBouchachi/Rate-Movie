@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { StartRating } from "./StartRating";
-import { KEY, Loader, ErrorMsg } from "./App-v3";
+import { KEY, Loader, ErrorMsg } from "./App";
 import { useKey } from "./useKey";
 
 export function MovieDetails({
@@ -30,7 +30,7 @@ export function MovieDetails({
     Director: director,
     Genre: genre,
   } = movie;
- 
+
   function handleAdd() {
     const newWatchMovie = {
       imbdId: selectedId,
@@ -45,11 +45,11 @@ export function MovieDetails({
     onCloseMovie();
   }
 
-  useKey("Escape",onCloseMovie);
+  useKey("Escape", onCloseMovie);
 
   useEffect(
     function () {
-     const controller = new AbortController();
+      const controller = new AbortController();
       async function getMovieDetails() {
         try {
           setLoading(true);
@@ -73,12 +73,11 @@ export function MovieDetails({
       }
       getMovieDetails();
       return function () {
-         controller.abort();
+        controller.abort();
       };
     },
     [selectedId]
   );
-
 
   useEffect(
     function () {
@@ -88,8 +87,6 @@ export function MovieDetails({
     [title]
   );
 
-
-  
   return (
     <div className="details">
       {isloading ? (
